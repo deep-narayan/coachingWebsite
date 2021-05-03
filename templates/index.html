@@ -1,0 +1,451 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Prince Institute of Computer Science</title>
+    <meta name="Prince Intitute of CSE" content="">
+    <meta name="Best Intitute of Computer Science in Eastern UP" content="">
+    <meta name="Atul" content="">
+
+    <link rel="icon" href="{% static 'images/logo2.jpg' %}" type="image/gif" sizes="16x16">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{% static 'css/pogo-slider.min.css' %}" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+
+
+</head>
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="{% static 'images/loader.gif' %}" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="{% static 'images/logoo.JPG' %}" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="/">Home</a></li>
+                        <li><a class="nav-link" href="/about/">About</a></li>
+                        <li><a class="nav-link" href="/courses/">Courses</a></li>
+                        <li><a class="nav-link" href="/faculty/">Faculty</a></li>
+                        <li><a class="nav-link" href="/gallery/">Gallery</a></li>
+                        <li><a class="nav-link" href="/login/">Login</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    <!-- End header -->
+{% block mainbody %}
+    <!-- Start Banner -->
+    <div class="ulockd-home-slider">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="pogoSlider" id="js-main-slider">
+                    <div class="pogoSlider-slide" style="background-image:url({% static 'images/banner_img.png' %});">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pogoSlider-slide" style="background-image:url({% static 'images/IMG_9739.jpg' %});">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .pogoSlider -->
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+    <!-- section -->
+	<div class="section tabbar_menu">
+	   <div class="container">
+	      <div class="row">
+		      <div class="col-md-12">
+			     <div class="tab_menu">
+				    <ul>
+					   <li><a href="#"><span class="icon"><i class="fa fa-hand-o-right" style="font-size:36px;color:red"></i></span><span><b>Follow us</b></span></a></li>
+					   <li><a href="www.facebook.com/prince"><span class="icon"><i class="fa fa-facebook-f" style="font-size:30px"></i></span><span>Facebook</span></a></li>
+					   <li><a href="www.instagram.com/prince"><span class="icon"><i class="fa fa-instagram" style="font-size:30px"></i></span><span>Instagram</span></a></li>
+					   <li><a href="www.youtube.com/prince"><span class="icon"><i class="fa fa-youtube" style="font-size:30px"></i></span><span>YouTube</span></a></li>
+                       <li><a href="www.location.com"><span class="icon"><i class="fa fa-map-marker" style="font-size:30px"></i></span><span>Location</span></a></li>
+                       <li><a href="mailto:princeinstitute.atul13@gmail.com"><span class="icon"><i class="fa fa-envelope" style="font-size:30px"></i></span><span>Email</span></a></li>
+                       <li><a href="#"><span class="icon"><i cl ass="fa fa-phone" style="font-size:24px"></i></span><span>  9454537628 Call Now</span></a></li>
+					</ul>
+				 </div>
+			  </div>
+		  </div>
+	   </div>
+	</div>
+    <!-- end section -->
+    <br>
+    <br>
+    <marquee scrollamount=15  onmouseover="this.stop()"; onmouseout="this.start();"><h2>Where Quality Speaks itself.</h2></marquee>
+	<!-- section -->
+    <div class="section margin-top_50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 layout_padding_2">
+                    <div class="full">
+                        <div class="heading_main text_align_left" style="margin-top: 80px;">
+						   <h2><span>Welcome To Prince Intitute of Computer Science</span></h2>
+                        </div>
+						<div class="full">
+						  <p>Established in the year 2006, Prince Institute Of Computer Science in Bagaha Baba Road, Gorakhpur is a top player in the category 
+                              Computer Training Institutes For O Level in the Gorakhpur.
+                               This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Gorakhpur.</p>
+						</div>
+						<div class="full">
+						   <a class="hvr-radial-out button-theme" href="/about/">About more</a>
+						</div>
+                    </div>
+                </div>
+				<div class="col-md-6">
+                    <div class="full">
+                        <img src="{% static 'images/img2.jpg' %}" alt="#" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+           
+	<!-- section -->
+    <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+						   <h2><span>Popular </span>Courses</h2>
+                        </div>
+					  </div>
+                </div>
+				<div class="col-md-4">
+                    <div class="full blog_img_popular">
+                       <img class="img-responsive" src="{% static 'course/ccc.png' %}" alt="#" /> 
+                       
+                       <p>The computer literacy programme of the Society is an outcome of the recommendation of National Task Force on Information Technology and 
+                           Software Development. This course is designed to aim at imparting a basic level IT Literacy programme for the common man.</p>
+                    </div>
+                </div>
+				<div class="col-md-4">
+                    <div class="full blog_img_popular">
+                        <img class="img-responsive" src="{% static 'course/olevel.jpg' %}" alt="#" />
+                        
+                        <p>O Level Course, as well as other equivalent courses, are organized by NIELIT (National Institute of Electronics and Information Technology) 
+                            which is recognized by Government of India and was earlier known as DOEACC (Department of Electronics Accreditation of Computer Classes)</p>
+                    </div>
+                </div>
+				<div class="col-md-4">
+                    <div class="full blog_img_popular">
+                        <img class="img-responsive" src="{% static 'course/tally.png' %}" alt="#" />
+                        
+                        <p>Tally is a computer software which is widely used for accounting purpose mostly by small and medium business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+    <div style="background-color:blue">
+        <marquee scrollamount=15  onmouseover="this.stop()"; onmouseout="this.start();" >
+            <h2 style=" color:yellow;">
+                <i class="fa fa-circle" style="font-size:18px"></i> &nbsp;CCC New Batch Start Every month &nbsp;&nbsp;
+                &nbsp;<i class="fa fa-circle" style="font-size:18px"></i>
+            Tally New Batch Start Every month &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:18px"></i>
+            O level New Batch Start Every January and july &nbsp&nbsp;<i class="fa fa-circle" style="font-size:18px"></i>
+            C, C++ , Java , Python Language New Batch Start Every month &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:18px"></i>
+            Spoken English New Batch Start Every month &nbsp;&nbsp;</h2>
+        </marquee>
+    </div>
+	<!-- section -->
+    <div class="section margin-top_50 silver_bg">
+        <div class="container">
+            <div class="row">
+			    <div class="col-md-6">
+                    <div class="full float-right_img" style="margin-top: 80px;">
+                        <img src="{% static 'images/img6.jpg' %}" alt="#" />
+                    </div>
+                </div>
+                <div class="col-md-6 layout_padding_2">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+						   <h2><span>Apply for Admission</h2>
+                        </div>
+						<div class="full">
+						  <p>Prince Institute Of Computer Science in Bagaha Baba Road has a wide range of products and services to cater to the varied requirements
+                               of their customers. The staff at this establishment are courteous and prompt at providing any assistance. They readily answer any 
+                               queries or questions that you may have. Pay for the product or service with ease by using any of the available modes of payment, 
+                               such as Cash, Cheques. This establishment is functional from 07:00 - 21:00..</p>
+						</div>
+						<div class="full">
+						   <a class="hvr-radial-out button-theme" href="#contact">Apply</a>
+						</div>
+                    </div>
+                </div>
+			</div>
+        </div>
+    </div>
+	<!-- end section -->
+    {% if sent %}
+
+        <script type="text/javascript">alert("Your Query Submitted!!")</script>
+
+    {% endif %}
+
+	<!-- section -->
+    <div class="section layout_padding padding_bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+						   <h2><span>Classroom</span></h2>
+                        </div>
+						<div class="full">
+						  <p>The Institute has state of the art computer center with latest configuration computers with multimedia 
+                              and also connected with internet facility to cater to the computing needs of the faculty, staff and 
+                              student for their research and teaching activities. The computer center is headed by the experienced 
+                              computer engineer. The internet facility is made available to the entire setup. 
+                              The Institute has set up an excellent facility for accessing Internet through a dedicated leased line.</p>
+						</div>
+						
+                    </div>
+                </div>
+				<div class="col-md-6">
+                    <div class="full" style="margin-top: 80px;">
+                        <img class="img-responsive" src="{% static 'images/img7.jpg' %}" alt="#" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- end section -->
+	<!-- section -->
+    <div class="section layout_padding padding_bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+						   <h2><span>News and Activities</span></h2>
+                        </div>
+					  </div>
+                </div>
+			  </div>
+               <div class="row">
+                <div class="col-lg-12">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+									   <div class="full blog_img_popular">
+                                          <img class="img-responsive" src="{% static 'images/img10.jpg' %}" alt="#" />
+										  <h4>Independance Day</h4>
+										  <p>Let's make a strong decision, to value our nation and never forget the sacrifices from those who gave us freedom.
+                                         Happy Independence Day! Happy Independence Day to everyone, I wish you all faith in the words, freedom in the mind 
+                                         and pride in your souls. Let's salute this glorious nation on its Independence Day!</p>
+										</div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="full blog_img_popular">
+                                          <img class="img-responsive" src="{% static 'course/ccc.png' %}" alt="#" />
+										  <h4>Why CCC is important?</h4>
+										  <p>In the current employment trends of public sector government, computer certificate from the best franchises like those 
+                                              associated with Techinaut Institute of technology is always a positive. The key reason is, all government works occur 
+                                              around core applications based on computers from side to side and also most of the public services have been computerized 
+                                              and networked. So, now the government staffs have to spend more time with the computer systems. And thus the knowledge 
+                                              in a computer becomes the foremost requirement.</p>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+									   <div class="full blog_img_popular">
+                                          <img class="img-responsive" src="{% static 'images/IMG_9728.jpg' %}" alt="#" />
+										  <h4>Labs</h4>
+										  <p>Fully corporative Labs with all the Latest Facalities for Learning with Fun </p>
+										</div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="full blog_img_popular">
+                                          <img class="img-responsive" src="{% static 'images/image1.jpg' %}" alt="#" />
+										  <h4>Our Team</h4>
+										  <p>Best team to mentor your Tech Carrier in eastern UP</p>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>			  
+           </div>
+        </div>
+    <!-- end section -->
+    <!--Why Us-->
+<div class="section layout_padding padding_bottom-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="full">
+                    <div class="heading_main text_align_left">
+                       <h2><span>Why Us</span></h2>
+                    </div>
+                    <div class="full">
+                            <h2><i class="fa fa-circle" style="font-size:18px"></i> &nbsp; Team of sincere dedicated, learned &amp; experienced members of faculty.</h2>
+                            <h2><i class="fa fa-circle" style="font-size:18px"></i> &nbsp;Highly qualified &amp; recognized monitors</h2>
+                            <h2><i class="fa fa-circle" style="font-size:18px"></i> &nbsp;Institute has faculty from diverse academic background &amp; industry experts.</h2>
+                            <h2><i class="fa fa-circle" style="font-size:18px"></i> &nbsp;Wi-Fi enabled campus</h2>
+                            <h2><i class="fa fa-circle" style="font-size:18px"></i> &nbsp;Special courses for professional and business efficiency in conversational &amp; written English.</h2>
+                            <h2><i class="fa fa-circle" style="font-size:18px"></i> &nbsp; All the Students are given Proper Time in Theory as well as Labs</h2>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="full" style="margin-top: 80px;">
+                    <img class="img-responsive" src="{% static 'images/image5.jpg' %}" alt="#" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--End Section-->
+{% endblock %}
+	<!-- section -->
+    <div class="section layout_padding padding_bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+						   <h2><span>Contact and Queries</span></h2>
+                        </div>
+					  </div>
+                </div>
+			  </div>
+           </div>
+        </div>
+	<!-- end section -->
+	<!-- section -->
+    <div class="section contact_section" style="background:#12385b;" id="contact">
+        <div class="container">
+               <div class="row">
+                 <div class="col-lg-6 col-md-6 col-sm-12">
+				    <div class="full float-right_img" style="margin-top: 120px; width:300px;">
+                        <img src="{% static 'images/logo2.jpg' %}" alt="#">
+                    </div>
+                 </div>
+				 <div class="layout_padding col-lg-6 col-md-6 col-sm-12">
+				    <div class="contact_form">
+					    <form method='POST'>
+                            {% csrf_token %}
+						   <fieldset>
+						       <div class="full field">
+							      <input type="text" placeholder="Your Name" name="pname" />
+							   </div>
+							   <div class="full field">
+							      <input type="email" placeholder="Email Address" name="email" />
+							   </div>
+							   <div class="full field">
+							      <input type="phn" placeholder="Phone Number" name="number" />
+							   </div>
+							   <div class="full field">
+							      <textarea placeholder="Message" name="message"></textarea>
+							   </div>
+							   <div class="full field" >
+							      <input type="submit" name="Submit" class="btn btn-warning">
+							   </div>
+						   </fieldset>
+						</form>
+					</div>
+                 </div>
+               </div>			  
+           </div>
+        </div>
+	<!-- end section -->
+    {% include 'footer.html' %}
+    <!--Footer-->
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.pogo-slider.min.js' %}"></script>
+    <script src="{% static 'js/slider-index.js' %}"></script>
+    <script src="{% static 'js/smoothscroll.js' %}"></script>
+    <script src="{% static 'js/form-validator.min.js' %}"></script>
+    <script src="{% static 'js/contact-form-script.js' %}"></script>
+    <script src="{% static 'js/isotope.min.js' %}"></script>
+    <script src="{% static 'js/images-loded.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{% extends 'dashboard.html' %}
+
+{% block bo %}
+<br>
+<div class="container border border-danger">
+	<h1 align="center">Fee Deatils</h1>
+	<table class="table">
+		<tr align="center">
+			<td>Course</td>
+			<td>Paid</td>
+			<td>Due</td>
+			<td>Date</td>
+		</tr>
+		{% if fee %}
+		{% for i in fee %}
+			<tr align="center">
+				<td>{{ i.course }}</td>
+				<td>{{ i.paid_fee }}</td>
+				<td>{{ i.due }}</td>
+				<td>{{ i.date }}</td>
+			</tr>
+		{% endfor %}
+		{% else %}
+		<script type="text/javascript">
+			alert('Fee Not Submitted!!');
+		</script>
+		{% endif %}
+	</table>
+	
+</div>
+<br>
+{% endblock %}

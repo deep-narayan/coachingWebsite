@@ -1,0 +1,39 @@
+{% extends 'dashboard.html' %}
+
+{% block bo %}
+<div style="height:100%; width:70%; margin-left:100px; margin-top:150px; margin-bottom:200px;" class="border border-warning">
+<h1 align="center"><u>Instructions</u></h1>
+<br>
+
+<br>
+<form action='examination/' method="get" >
+		{% csrf_token %}
+	<div style="margin:10px;">
+		<label>Select Technology</label> &nbsp;
+		<select class="form-control " name="techno">
+		<option value="none">Select</option>
+		{% for i in c %}
+		<option value="{{ i.id }}">{{ i.name }}</option>
+		{% endfor %}
+		</select>
+	    
+	</div>
+	<br>
+	<div style="margin:10px;">
+		<label>Select Chapter</label> &nbsp;
+		<select class="form-control " name="chapter">
+		<option value="none">Select</option>
+		{% for i in ch %}
+		<option value="{{ i.id }}">{{ i.chapter_name }}</option>
+		{% endfor %}
+		</select>
+	    
+	</div>
+	<br>
+	<div style="margin-left:500px;">
+		<input type="Submit" name="Submit" class="btn btn-warning">
+	</div>
+	</form>
+<br>
+</div>
+{% endblock %}

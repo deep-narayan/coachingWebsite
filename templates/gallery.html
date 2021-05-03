@@ -1,0 +1,73 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style2.css' %}">
+
+	         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{% static 'css/pogo-slider.min.css' %}" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+    <link rel="icon" href="{% static 'images/logo2.jpg' %}" type="image/gif" sizes="16x16">
+
+</head>
+<body>
+
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="{% static 'images/logoo.JPG' %}" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="/">Home</a></li>
+                        <li><a class="nav-link" href="/about/">About</a></li>
+                        <li><a class="nav-link" href="/courses/">Courses</a></li>
+                        <li><a class="nav-link" href="/faculty/">Faculty</a></li>
+                        <li><a class="nav-link" href="/gallery/">Gallery</a></li>
+            <li><a class="nav-link" href="/login/">Login</a></li>
+            <li><a class="nav-link" href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<div style="margin-top:100px;">
+
+<div class="heading_main text_align_center">
+						   <h2><span>Gallery</h2>
+                        </div>
+
+
+{% for file in files %}
+    {% with file  as img %}
+        <img src="{% static img %}" alt="" class="pic" width=30% height=30%>
+    {% endwith %}
+{% endfor %}
+
+
+</div>
+ 
+<!--
+ <img class="pic logoimg" src="{% static 'dynamicimage/DSC_0304.JPG' %}" alt="" width=30% height=30%>
+-->
+<div style="margin-top:20px;">
+{% include 'footer.html' %}
+</div>
+</body>
+</html>

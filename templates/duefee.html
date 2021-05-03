@@ -1,0 +1,51 @@
+{% extends 'submitfee.html' %}
+{% block body %}
+<div style="height:650px;">
+		<h1 align="center">Submit Fee</h1>
+		{% if f %}
+		<div class="container">
+			<form method="post" action="/finalfee/">
+				{% csrf_token %}
+				<label>Paid Fee</label>
+				<input type="text" name="paidfee" class="form-control">
+				<label>Due Fee</label>
+				<input type="text" name="duefee" class="form-control">
+				<input type="hidden" name="course" value="{{ course }}">
+				<input type="hidden" name="student" value="{{ student }}">
+				
+				<br>
+				<input type="submit" name="Submit">
+			</form>
+		</div>
+		<br>
+		<br>
+
+		<div class="container">
+			<table class="table">
+				<tr>
+					<th>Name</th>
+					<th>Paid Fee</th>
+					<th>Due Fee</th>
+					<th>Date</th>
+				</tr>
+				{% for i in f %}
+				<tr>
+					<td>{{ i.student }}</td>
+					<td>{{ i.paid_fee }}</td>
+					<td>{{ i.due }}</td>
+					<td>{{ i.date }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+		{% else %}
+		<p>Add Student Fee 1st Using SuperUser panel</p>
+		{% endif %}
+		{% if error %}
+		<script type="text/javascript">
+			alert("{{ error }}")
+		</script>
+		{% endif %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="{% static 'css/styleing.css' %}" media="all" />
+  </head>
+  <body>
+    <a href="/login"><button>Home</button></a>
+    <header class="clearfix">
+      <div id="logo">
+        <img src="{% static 'images/logoo.JPG' %}">
+      </div>
+      <h1>Registration Form</h1>
+    <div id="project">
+        <h2>Username : {{ user.username }}</h2>
+        <h2>First Name : {{ user.first_name }}</h2>
+        <h2>Last Name : {{ user.last_name }}</h2>
+        <h2>Email : {{ user.email }}</h2>
+        <h2>Gender : {{ stu.gender }}</h2>
+        <h2>DOB : {{ stu.dob }}</h2>
+        <h2>Address : {{ stu.address }}</h2>
+        <h2>Father's Name : {{ stu.father_name }}</h2>
+        <h2>Mother's Name : {{ stu.mother_name }}</h2>
+        <h2>Mobile no : {{ stu.mobileno }}</h2>
+        <h2>Father Mobile no : {{ stu.father_mob }}</h2>
+        <h2>Aadhar no : {{ stu.aadhar }}</h2>
+        <h2>Course : {{ stu.course }}</h2>
+      </div>
+    </header>
+    <main>
+      
+      <div id="notices">
+        <div>NOTICE</div>
+        <div class="notice"></div>
+      </div>
+    </main>
+    <footer>
+      All right reserved @Prince Institute Of Computer Science
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fee Receipt</title>
+    <link rel="stylesheet" href="{% static 'css/styleing.css' %}" media="all" />
+  </head>
+  <body>
+    <a href="/submitfee/"><button>Home</button></a>
+    <header class="clearfix">
+      <div id="logo">
+        <img src="{% static 'images/logoo.JPG' %}">
+      </div>
+      <h1 class="new">Fee Receipt</h1>
+      <div id="project">
+        <h2>Username : {{ fee.student }} </h2>
+        <h2>Paid Fee : {{ fee.paid_fee }}</h2>
+        <h2>Due Fee : {{ fee.due }}</h2>
+        <h2>Date : {{ fee.date }}</h2>
+    </header>
+    <main>
+      <hr>
+      <div id="notices">
+        <div>NOTICE:</div>
+        <div class="notice">Submitted Fee will not be Refunded</div>
+      </div>
+    </main>
+    <footer>
+     All right reserved @Prince Institute Of Computer Science
+    </footer>
+  </body>
+</html>

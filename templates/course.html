@@ -1,0 +1,259 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Courses</title>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style2.css' %}">
+	         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{% static 'css/pogo-slider.min.css' %}" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+    <link rel="icon" href="{% static 'images/logo2.jpg' %}" type="image/gif" sizes="16x16">
+
+</head>
+<body>
+
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="{% static 'images/logoo.JPG' %}" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="/">Home</a></li>
+                        <li><a class="nav-link" href="/about/">About</a></li>
+                        <li><a class="nav-link" href="/courses/">Courses</a></li>
+                        <li><a class="nav-link" href="/faculty/">Faculty</a></li>
+                        <li><a class="nav-link" href="/gallery/">Gallery</a></li>
+            <li><a class="nav-link" href="/login/">Login</a></li>
+            <li><a class="nav-link" href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<div style="margin-top:100px">
+	<div class="heading_main text_align_center">
+						   <h2><span>Courses</h2>
+                        </div>
+	
+	<div class="row">
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/ccc.png' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">CCC</h5>
+						<p class="card-text">The computer literacy programme of the Society is an outcome of the recommendation of National Task Force on Information Technology and Software Development. This course is designed to aim at imparting a basic level IT Literacy programme for the common man.</p>
+						
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/tally.png' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">Tally</h5>
+						<p class="card-text">Tally is a computer software which is widely used for accounting purpose mostly by small and medium business.</p>
+						
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/spoken.jpg' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">Spoken English</h5>
+						<p class="card-text">Spoken English is what we speak unlike the written English. Spoken English is the language used in verbal communication.</p>
+						
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/olevel.jpg' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">O Level</h5>
+						<p class="card-text">O Level Course, as well as other equivalent courses, are organized by NIELIT (National Institute of Electronics and Information Technology) which is recognized by Government of India and was earlier known as DOEACC (Department of Electronics Accreditation of Computer Classes).</p>
+						
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/c.jpg' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">C Language</h5>
+						<p class="card-text">C is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations.</p>
+						
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/c++.png' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">C++</h5>
+						<p class="card-text">C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.</p>
+						
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/java.png' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">JAVA</h5>
+						<p class="card-text">Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.</p>
+						
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/python.jpg' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">Python</h5>
+						<p class="card-text">Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991.</p>
+						
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/html.png' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">HTML</h5>
+						<p class="card-text">Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript.</p>
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/css.png' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">CSS</h5>
+						<p class="card-text">CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
+						
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/js.png' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">JavaScript</h5>
+						<p class="card-text">JavaScript is most commonly used as a client side scripting language. This means that JavaScript code is written into an HTML page..</p>
+						
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-3">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'course/mysql.png' %}" class="card-img-top">
+				<div class="card-body">
+						<h5 class="card-title">MySQL</h5>
+						<p class="card-text">MySQL is an Oracle-backed open source relational database management system (RDBMS) based on Structured Query Language (SQL).</p>
+						
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<br>
+	<div class="container">
+	<u>	<h1 align='center'>Courses with Fee Structure</h1></u>
+		<br>
+		<center>
+		<div class="col-sm-8">
+		<table class="table table-striped table-hover text-white table-dark">
+			<tr style="background-color:blue">
+				<th>Sr.No</th>
+				<th>Course</th>
+				<th>Duration</th>
+				<th>Fee</th>
+			</tr>
+			<tr>
+				<td>01</td>
+				<td>CCC</td>
+				<td>3 Month</td>
+				<td>4000</td>
+			</tr>
+			<tr>
+				<td>02</td>
+				<td>CCC</td>
+				<td>5 Month</td>
+				<td>5000</td>
+			</tr>
+			<tr>
+				<td>03</td>
+				<td>Tally</td>
+				<td>3 Month</td>
+				<td>4000</td>
+			</tr>
+			<tr>
+				<td>04</td>
+				<td>Tally</td>
+				<td>5 Month</td>
+				<td>5000</td>
+			</tr>
+			<tr>
+				<td>05</td>
+				<td>O Level</td>
+				<td>1 Year</td>
+				<td>18000</td>
+			</tr>
+			<tr>
+				<td>06</td>
+				<td>Spoken English</td>
+				<td>3 Month</td>
+				<td>4000</td>
+			</tr>
+			<tr>
+				<td>07</td>
+				<td>JAVA</td>
+				<td>3 Month</td>
+				<td>4000</td>
+			</tr>
+			<tr>
+				<td>08</td>
+				<td>C language</td>
+				<td>3 Month</td>
+				<td>4000</td>
+			</tr>
+			<tr>
+				<td>09</td>
+				<td>C++</td>
+				<td>3 Month</td>
+				<td>4000</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>Python</td>
+				<td>3 Month</td>
+				<td>4000</td>
+			</tr>
+		</table>
+		
+		
+		
+		</div>
+	<br>
+</div>
+{% include 'footer.html' %}
+</body>
+</html>

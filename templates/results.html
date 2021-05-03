@@ -1,0 +1,35 @@
+{% extends 'dashboard.html' %}
+
+{% block bo %}
+<br>
+<div class="container border border-danger">
+	<h1 align="center">Results</h1>
+	<table class="table">
+		<tr align="center">
+			<td>Technology</td>
+			<td>Chapter</td>
+			<td>Marks(%)</td>
+			<td>Date</td>
+		</tr>
+		{% if obj %}
+		{% for i in obj %}
+			<tr align="center">
+				<td>{{ i.tech}}</td>
+				<td>{{ i.chapter }}</td>
+				<td>{{ i.marks }}</td>
+				<td>{{ i.date }}</td>
+			</tr>
+		{% endfor %}
+		{% else %}
+		<script type="text/javascript">
+			alert('No Exam Given till now');
+		</script>
+		{% endif %}
+	</table>
+	
+</div>
+
+	
+</div>
+<br>
+{% endblock %}

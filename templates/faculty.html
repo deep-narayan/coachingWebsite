@@ -1,0 +1,94 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/logo2.jpg' %}">
+	         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{% static 'css/pogo-slider.min.css' %}" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+
+</head>
+<body>
+
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="{% static 'images/logoo.JPG' %}" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="/">Home</a></li>
+                        <li><a class="nav-link" href="/about/">About</a></li>
+                        <li><a class="nav-link" href="/courses/">Courses</a></li>
+                        <li><a class="nav-link" href="/faculty/">Faculty</a></li>
+                        <li><a class="nav-link" href="/gallery/">Gallery</a></li>
+            <li><a class="nav-link" href="/login/">Login</a></li>
+            <li><a class="nav-link" href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="heading_main text_align_center" style="margin-top:100px">
+						   <h2><span>Faculty</h2>
+                        </div>
+    <br>
+	
+	<div class="row">
+		<div class="col-sm-3 p-4">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'images/jamal.jpg' %}" class="card-img-top logoimg">
+				<div class="card-body">
+						<h5 class="card-title">Ashraf Jamal</h5>
+						<p class="card-text"><b>(Director)</b><br>B Level, M.Sc(IT), A Level,O level, MA(English)</p>
+				</div>
+			</div>
+        </div>
+		<div class="col-sm-3 p-4">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'images/atul1.jpg' %}" class="card-img-top logoimg">
+				<div class="card-body">
+						<h5 class="card-title">Atul Singh</h5>
+						<p class="card-text"> <b>(Academic Head)</b></br>'B' Level, 'A' Level, 'O' Level<br>
+							Specialization on: <br>PHP,C , C++ ,JAVA, Python  </p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-4">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'images/asif.jpg' %}" class="card-img-top logoimg">
+				<div class="card-body">
+						<h5 class="card-title">Md. Asif</h5>
+						<p class="card-text"> <b>(Lab Faculty)</b></br>O Level, A Level<br>Specialization on .NET </p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 p-4">
+			<div class="card shadow-lg rounded" style="width: 18rem;">
+				<img src="{% static 'images/pragya.jpg' %}" class="card-img-top logoimg">
+				<div class="card-body">
+						<h5 class="card-title">Pragya Tripathi</h5>
+						<p class="card-text"><b>(Lab Faculty)</b></br>B.Sc , O Level , CCC , Tally  </p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% include 'footer.html' %}
+</body>
+</html>
